@@ -192,9 +192,6 @@ img {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    background-image: url("../img/Rectangle.svg");
-    background-repeat: no-repeat;
-    background-position: right center;
 }
 .hero__info {
     width: 540px;
