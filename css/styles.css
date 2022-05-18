@@ -181,7 +181,7 @@ img {
 .main-content {
     flex-grow: 1;
     background-repeat: no-repeat;
-    background-position: calc(50% + 705px) 197px;
+    background-position: calc(50% + 708px) 197px;
     background-image: url("../img/Rectangle.svg");
 }
 
