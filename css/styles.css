@@ -51,7 +51,6 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -61,7 +60,7 @@ body {
 }
 
 *:focus {
-    outline-color: var(--color-link);                             
+    outline-color: var(--color-links);                             
     outline-offset: 2px;
     outline-width: 3px;
     outline-style: dashed;
@@ -181,18 +180,25 @@ img {
 /* MAIN CONTENT */
 .main-content {
     flex-grow: 1;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 705px) 197px;
+    background-image: url("../img/Rectangle.svg");
 }
 
+
+/* HERO */
 .hero {
     padding-top: 131px;
     padding-bottom: 203px;
 }
+
 .hero__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
+
 .hero__info {
     width: 540px;
     position: relative;
