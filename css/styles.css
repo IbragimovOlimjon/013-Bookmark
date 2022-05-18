@@ -1,9 +1,31 @@
 /* CUSTOM PROPY */
 :root {
-
+    --color-link:#FA5959;
+    --color-links:#5267DF;
+    --color-title-text:#242A45;
+    --color:#fff;
+    --fonts:'Rubik', 'Arial', sans-serif;
 }
 
 /* FONTS */
+@font-face {
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src:url('../fonts/rubik-v20-latin-regular.woff2') format('woff2'), 
+    url('../fonts/rubik-v20-latin-regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    src:url('../fonts/rubik-v20-latin-500.woff2') format('woff2'), 
+    url('../fonts/rubik-v20-latin-500.woff') format('woff'); 
+    font-display: swap;
+}
+
 
 /* GLOBAL-STYLE */
 * {
@@ -28,12 +50,12 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 24px;
-    background-color: var(--global-fon);
-    color: var(--text-color);
-    font-family: var(--font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: var(--fonts);
+    color: var(--color-title-text);
+    background-color: var(--color);     rubik 400 500 
 }
 
 *:focus {
