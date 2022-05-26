@@ -56,8 +56,9 @@ body {
     line-height: 28px;
     font-family: var(--fonts);
     color: var(--color-title-text);
-    background-color: var(--color);     
+    background-color: var(--color);  
 }
+
 
 *:focus {
     outline-color: var(--color-links);                             
@@ -180,9 +181,6 @@ img {
 /* MAIN CONTENT */
 .main-content {
     flex-grow: 1;
-    background-repeat: no-repeat;
-    background-position: calc(50% + 708px) 197px;
-    background-image: url("../img/Rectangle.svg");
 }
 
 
@@ -190,6 +188,9 @@ img {
 .hero {
     padding-top: 131px;
     padding-bottom: 203px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 709px) 197px;
+    background-image: url("../img/Rectangle.svg");
 }
 
 .hero__container {
@@ -268,9 +269,272 @@ img {
     height: 381px;
     position: absolute;
     z-index: 1;
-    left: 55%;
+    left: 631px;
     bottom: -21px;
     object-fit: cover;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
+
+/* FEATURES */
+.main-info {
+    width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.main-text {
+    text-align: center;
+    margin: 0;
+    opacity: 0.5;
+}
+
+
+.features__container {
+    margin-bottom: 72px;
+}
+
+.features__title {
+    margin-bottom: 16px;
+}
+
+.features__list {
+    width: 730px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features__iteam:not(:last-child) {
+    margin-right: 105px;
+}
+
+.features__button {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.533333px;
+    color: var(--color-title-text);
+    background-color: var(--color);
+    opacity: 0.75;
+    display: block;
+    transition: 0.2s ease;
+    border: none;
+    padding-bottom: 27px;
+}
+
+.features__button:hover {
+    color: var(--color-link);
+}
+
+
+/* BOOKMARK CLICK */
+.bookmark-click {
+    background-image: url("../img/Rectangle.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + -575px) 154px;
+    padding-top: 72px;
+    padding-bottom: 119px;
+    position: relative;
+    z-index: -1;
+}
+.bookmark-click__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    
+}
+.bookmark-click__img {
+    width: 546px;
+    height: 346px;
+    object-fit: cover;
+    left: 10px;
+    top: 72px;
+    z-index: -1;
+}
+
+.bookmark-click__info {
+    width: 440px;
+}
+
+.bookmark-click__heading {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    letter-spacing: -0.1px;
+    color: var(--color-title-text);
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.bookmark-click__text {
+    margin: 0;
+    margin-bottom: 32px;
+    opacity: 0.5;
+}
+
+.bookmark-click__link {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--color-links);
+    color: var(--color);
+    padding: 10px 18px;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+}
+
+
+/* DOWNLOAD EXTENSION */
+.download-extension {
+    padding-top: 119px;
+    padding-bottom: 114px;
+}
+.download-extension__info {
+    margin-bottom: 48px;
+}
+
+.download-extension__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.download-extension__item {
+    max-width: 284px;
+    padding: 52px 21px 24px 24px;
+    background-color: var(--color);
+    box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.download-extension__item:not(:last-child) {
+    margin-right: 34px;
+}
+
+.download-extension__item--firefox {
+    margin-bottom: -86px;
+}
+
+.download-extension__item--opera {
+    margin-bottom: -166px;
+}
+
+.download-extension__img {
+    object-fit: cover;
+    margin-bottom: 32px;
+}
+
+.download-extension__heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    margin: 0;
+    margin-bottom: 6px;
+}
+.download-extension__text {
+    font-size: 15px;
+    margin: 0;
+    opacity: 0.5;
+    margin-bottom: 60px;
+}
+.download-extension__link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: var(--color);
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--color-links);
+    padding: 10px 35px;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+}
+
+/* FREQUENTLY QUESTIONS */
+.frequently-questions {
+    padding-top: 114px;
+    padding-bottom: 75px;
+}
+
+
+.frequently-questions__acardion-wrapper {
+    margin-left: 496px;
+    margin-right: 483px;
+    padding-top: 31px;
+}
+
+.acardion-title {
+    border-top: 1px solid #979797;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.frequently-questions__acardion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color);
+    color: var(--color-title-text);
+    cursor: pointer;
+    padding-top: 19px;
+    padding-bottom: 13px;
+    padding-left: 0;
+    padding-right: 24px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    border-bottom: 1px solid #979797;
+}
+
+
+.frequently-questions__arrow {
+    color: var(--color-links);
+    width: 16px;
+    height: 8px;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+.frequently-questions__panel {
+    padding: 5px;
+    background-color: var(--color);
+    display: none;
+}
+
+.frequently-questions__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    color: var(--color-title-text);
+    opacity: 0.75;
+}
+
+.acardion-title {
+    border-top: 1px solid #979797;
+}
