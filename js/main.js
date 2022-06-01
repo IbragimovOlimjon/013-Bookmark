@@ -1,20 +1,13 @@
-// let acc = document.getElementsByClassName("frequently-questions__acardion");
-// let i;
+const elsFeaturesItem = document.querySelectorAll('.features__item');
+const elsTabLink = document.querySelectorAll('.js-tab-link');
 
-// for (i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function() {
-//         this.classList.toggle("active");
-        
-//         let frequentlyQuestions__panel = this.nextElementSibling;
-//         if (frequentlyQuestions__panel.style.display === "block") {
-//             frequentlyQuestions__panel.style.display = "none";
-//         } else {
-//             frequentlyQuestions__panel.style.display = "block";
-//         }
-        
-//     });
-// }
 
-// array.forEach(element => {
+elsFeaturesItem.forEach(function (item, index){
+    elsFeaturesItem[index].addEventListener('click', function(){
+        elsFeaturesItem.forEach(function (elsFeaturesItem){
+            elsFeaturesItem.classList.remove('features__item--active');
+        });
+        elsFeaturesItem[index].classList.add('features__item--active');
+    });
 
-// });
+});
