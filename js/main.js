@@ -21,3 +21,6 @@ elsAccordionItem.forEach(function (item, index){
         elsAccordionItem[index].classList.toggle('accordion__item--open');
     });
 });
+
+// INPUT
+
