@@ -670,6 +670,10 @@ img {
     border: 2px solid transparent;
 }
 
+.contact__input:valid {
+    background-color: #a3faa3;
+}
+
 .contact__input::placeholder {
     font-size: 14px;
 }
